@@ -4,6 +4,7 @@ import ubinascii
 
 class Board:
     def __init__(self):
+        print("hola")
         self.device_id = ubinascii.hexlify(unique_id()).decode()
         self.button = Pin(4, Pin.IN, Pin.PULL_DOWN)
 
